@@ -12,6 +12,5 @@ public class TransactionalOnPostConstructApplication implements CommandLineRunne
 	
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println();
 	}
 }
