@@ -1,6 +1,5 @@
 package com.github.igorzh.so17346679.service;
 
-import javax.annotation.PostConstruct;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -10,11 +9,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 
+import jakarta.annotation.PostConstruct;
+
 @Service
 @Lazy(false)
 public class TransactionalOnPostConstructService {
 	
-	private static Log logger = LogFactory.getLog(TransactionalOnPostConstructService.class);
+	private final static Log logger = LogFactory.getLog(TransactionalOnPostConstructService.class);
 	
 	@Autowired
 	private TransactionalOnPostConstructService self;
