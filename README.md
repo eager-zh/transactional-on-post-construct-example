@@ -1,5 +1,5 @@
 # transactional-on-post-construct-example
-A simple Spring Boot application which demonstrates a use of @Transactional in @PostConstruct method
+A simple Spring Boot application which demonstrates a use of `@Transactional` in `@PostConstruct` method.
 
 Demonstrates a solution to a problem of running Spring Transaction inside of a Spring Bean's method annotated with `@PostConstruct`, discussed in Stack Overflow question #17346679 [@Transactional on @PostConstruct method](https://stackoverflow.com/questions/17346679/transactional-on-postconstruct-method).
 
@@ -9,5 +9,5 @@ The presence of Spring Transaction is proved by the examining of a flag returned
 
 See `TransactionalOnPostConstructService.java` for the details.
 
-Spring Boot environment is chosen for simplicity only, the solution should work for any Spring Bean-based application. 
+Spring Boot environment is chosen for simplicity only, the solution should work for any Spring application. 
 
